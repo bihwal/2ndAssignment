@@ -2,53 +2,39 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="800dp"
-    tools:context=".fragments.SumFragment"
+    android:layout_height="400dp"
     android:orientation="vertical"
-    >
+    tools:context=".fragments.AutomorphicFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sum of Two Numbers"
-        android:textSize="40dp"
-        android:layout_marginBottom="20dp"
+        android:text=" Check Automorphic"
         android:textAlignment="center"
-        android:textStyle="italic"/>
+        android:textSize="35dp"
+        android:textStyle="bold" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/etfirst"
+        android:hint="Please enter a number to check"
+        android:id="@+id/etauto"
+        android:textSize="25dp"
         android:textAlignment="center"
         android:inputType="number"
-        android:hint="Enter first Number"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="20dp"/>
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/etsecond"
-        android:textAlignment="center"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:inputType="number"
-        android:hint="Enter Second Number"/>
+        android:layout_marginTop="20dp"/>
 
     <Button
-        android:id="@+id/btnaddnums"
+        android:id="@+id/btnauto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="50dp"
+        android:text="Check Number"
+        android:layout_marginTop="30dp"
         android:layout_marginRight="50dp"
-        android:text="SUM"
-        android:layout_marginTop="25dp"/>
+        android:layout_marginLeft="50dp"/>
 
     <TextView
-        android:id="@+id/tvadd"
+        android:id="@+id/tvauto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="50dp"
@@ -56,5 +42,7 @@
         android:layout_marginTop="50dp"
         android:textSize="25dp"
         android:textAlignment="center"/>
+
+
 
 </LinearLayout>

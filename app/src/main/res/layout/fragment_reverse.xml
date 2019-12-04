@@ -2,53 +2,42 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="800dp"
-    tools:context=".fragments.SumFragment"
+    android:layout_height="400dp"
     android:orientation="vertical"
-    >
+    tools:context=".fragments.ReverseFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sum of Two Numbers"
-        android:textSize="40dp"
-        android:layout_marginBottom="20dp"
+        android:text="Reverse of two numbers"
+        android:textSize="30dp"
         android:textAlignment="center"
-        android:textStyle="italic"/>
+        android:textStyle="bold"
+        android:layout_marginBottom="40dp"/>
 
     <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/etfirst"
-        android:textAlignment="center"
-        android:inputType="number"
-        android:hint="Enter first Number"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="20dp"/>
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/etsecond"
-        android:textAlignment="center"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:inputType="number"
-        android:hint="Enter Second Number"/>
-
-    <Button
-        android:id="@+id/btnaddnums"
+        android:id="@+id/etrev"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
-        android:text="SUM"
-        android:layout_marginTop="25dp"/>
+        android:hint="Enter number"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="30dp" />
 
+    <Button
+        android:id="@+id/btrev"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check Palindrome"
+        android:textSize="25dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"/>
     <TextView
-        android:id="@+id/tvadd"
+        android:id="@+id/tvrever"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="50dp"
@@ -56,5 +45,7 @@
         android:layout_marginTop="50dp"
         android:textSize="25dp"
         android:textAlignment="center"/>
+
+
 
 </LinearLayout>

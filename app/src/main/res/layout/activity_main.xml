@@ -4,54 +4,78 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#5B607A"
     tools:context=".MainActivity">
 
-
     <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/btnAdd"
+        android:layout_width="109dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
         android:text="Sum"
-        tools:layout_editor_absoluteX="20dp"
-        tools:layout_editor_absoluteY="51dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/btnArea"
+        android:layout_width="117dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="44dp"
         android:text="Area of Circle"
-        tools:layout_editor_absoluteX="143dp"
-        tools:layout_editor_absoluteY="55dp" />
+        app:layout_constraintEnd_toStartOf="@+id/btnReverseNumber"
+        app:layout_constraintHorizontal_bias="0.702"
+        app:layout_constraintStart_toEndOf="@+id/btnAdd"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Reverse a Number"
-        tools:layout_editor_absoluteX="274dp"
-        tools:layout_editor_absoluteY="51dp" />
+        android:id="@+id/btnReverseNumber"
+        android:layout_width="127dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="264dp"
+        android:layout_marginTop="44dp"
+        android:text="Reverse Number"
+        app:layout_constraintStart_toStartOf="@+id/btnAdd"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Palindrome"
-        tools:layout_editor_absoluteX="18dp"
-        tools:layout_editor_absoluteY="138dp" />
+        android:id="@+id/btnPalindrome"
+        android:layout_width="110dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:text="Palindrome Number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAdd" />
 
     <Button
-        android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Automophic Number"
-        tools:layout_editor_absoluteX="143dp"
-        tools:layout_editor_absoluteY="138dp" />
+        android:id="@+id/btnAutomorphic"
+        android:layout_width="115dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="40dp"
+        android:text="Automorphic Number"
+        app:layout_constraintStart_toEndOf="@+id/btnPalindrome"
+        app:layout_constraintTop_toBottomOf="@+id/btnArea" />
 
     <Button
-        android:id="@+id/button6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Reverse a String"
-        tools:layout_editor_absoluteX="274dp"
-        tools:layout_editor_absoluteY="138dp" />
+        android:id="@+id/btnReverseString"
+        android:layout_width="125dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="4dp"
+        android:text="Reverse of String"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnReverseNumber" />
+
+    <LinearLayout
+        android:id="@+id/fragmentcontainer"
+        android:layout_width="424dp"
+        android:layout_height="360dp"
+        android:background="#4B7F92"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAutomorphic"
+        tools:layout_editor_absoluteX="-6dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
